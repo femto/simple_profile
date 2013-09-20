@@ -25,8 +25,8 @@
       <div id="user-nav" class="navbar navbar-inverse">
         <ul class="nav btn-group">
           <li class="btn btn-inverse"><a title="" href="<%= user_path(current_user) %>"><i class="icon icon-user"></i><span class="text"><%= current_user.email rescue "" %></span></a></li>
-          <li class="btn btn-inverse"><a title="" href="<%= edit_user_path(current_user) %>"><i class="icon icon-cog"></i> <span class="text">设置</span></a></li>
-          <li class="btn btn-inverse"><%= link_to "<i class='icon icon-share-alt'></i> <span class='text'>退出</span>".html_safe, destroy_user_session_path, :method => :delete, :class => "navbar-link", :rel => "tooltip", :"data-original-title" => "退出登录", :"data-placement" => "left" %></li>
+          <li class="btn btn-inverse"><a title="" href="<%= url_for(:controller=>"registrations", :action=>"edit", :id=>current_user) %>"><i class="icon icon-cog"></i> <span class="text">Edit My Account</span></a></li>
+          <li class="btn btn-inverse"><%= link_to "<i class='icon icon-share-alt'></i> <span class='text'>Logout</span>".html_safe, destroy_user_session_path, :method => :delete, :class => "navbar-link", :rel => "tooltip", :"data-original-title" => "退出登录", :"data-placement" => "left" %></li>
         </ul>
       </div>
       <!-- /#user-nav -->
