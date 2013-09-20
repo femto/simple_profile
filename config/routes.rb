@@ -5,7 +5,8 @@ SimpleProfile::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'home#index'
+  #root 'home#index'
+  root 'users#index'
   resources :users
 
   # Example of regular route:
