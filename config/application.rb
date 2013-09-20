@@ -1,3 +1,4 @@
+RMAGICK_BYPASS_VERSION_TEST = true
 require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
@@ -5,6 +6,7 @@ require 'rails/all'
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(:default, Rails.env)
+
 
 module SimpleProfile
   class Application < Rails::Application

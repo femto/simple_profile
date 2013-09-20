@@ -9,6 +9,8 @@ gem 'carrierwave',github:"carrierwaveuploader/carrierwave"
 gem 'thin'
 gem 'zurb-foundation'
 gem 'rmagick'
+gem 'carrierwave_backgrounder'
+gem "delayed_job"
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
