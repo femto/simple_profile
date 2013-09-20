@@ -33,14 +33,14 @@ class AvatarUploader < CarrierWave::Uploader::Base
   # end
 
   version :full do
-    process :resize_and_pad => [100, 100]
-    #process :resize_to_fit => [100,100]
+    #process :resize_and_pad => [100, 100]
+    process :resize_to_fit => [1000,1000]
     #process :resize_and_pad => [1000,1000]
   end
 
-  #version :thumb do
-  #  process :resize_and_pad => [200,150, :black]
-  #end
+  version :thumb do
+    process :resize_and_pad => [200,150, :black]
+  end
 
   # Create different versions of your uploaded files:
   # version :thumb do
