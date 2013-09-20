@@ -7,6 +7,7 @@ gem 'rails', '4.0.0'
 gem "devise"
 gem 'carrierwave'
 gem 'thin'
+gem 'zurb-foundation'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
