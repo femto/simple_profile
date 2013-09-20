@@ -1,3 +1,12 @@
+GIT
+  remote: git://github.com/carrierwaveuploader/carrierwave.git
+  revision: 0cac02f17398c6f89ffe46489f294b89ac902512
+  specs:
+    carrierwave (0.9.0)
+      activemodel (>= 3.2.0)
+      activesupport (>= 3.2.0)
+      json (>= 1.7)
+
 GEM
   remote: http://ruby.taobao.org/
   specs:
@@ -29,10 +38,6 @@ GEM
     atomic (1.1.14)
     bcrypt-ruby (3.1.2-x86-mingw32)
     builder (3.1.4)
-    carrierwave (0.9.0)
-      activemodel (>= 3.2.0)
-      activesupport (>= 3.2.0)
-      json (>= 1.7)
     coffee-rails (4.0.0)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0.beta, < 5.0)
@@ -48,7 +53,6 @@ GEM
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
     erubis (2.7.0)
-    eventmachine (1.0.3)
     eventmachine (1.0.3-x86-mingw32)
     execjs (2.0.1)
     hike (1.2.3)
@@ -87,6 +91,7 @@ GEM
     rake (10.1.0)
     rdoc (3.12.2)
       json (~> 1.4)
+    rmagick (2.13.2)
     sass (3.2.10)
     sass-rails (4.0.0)
       railties (>= 4.0.0.beta, < 5.0)
@@ -131,12 +136,13 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
-  carrierwave
+  carrierwave!
   coffee-rails (~> 4.0.0)
   devise
   jbuilder (~> 1.2)
   jquery-rails
   rails (= 4.0.0)
+  rmagick
   sass-rails (~> 4.0.0)
   sdoc
   sqlite3

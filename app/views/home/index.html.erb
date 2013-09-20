@@ -2,5 +2,8 @@
 
 <% @users.each do |user| %>
     <%= user.email %>
+
+        <%= image_tag(user.avatar_url) if user.avatar? %>
+
     <br/>
 <% end %>

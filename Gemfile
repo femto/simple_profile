@@ -5,9 +5,10 @@ source 'http://ruby.taobao.org'
 gem 'rails', '4.0.0'
 
 gem "devise"
-gem 'carrierwave'
+gem 'carrierwave',github:"carrierwaveuploader/carrierwave"
 gem 'thin'
 gem 'zurb-foundation'
+gem 'rmagick'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
