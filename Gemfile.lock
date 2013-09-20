@@ -50,6 +50,9 @@ GEM
     daemons (1.1.9)
     delayed_job (4.0.0)
       activesupport (>= 3.0, < 4.1)
+    delayed_job_active_record (4.0.0)
+      activerecord (>= 3.0, < 4.1)
+      delayed_job (>= 3.0, < 4.1)
     devise (3.1.0)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
@@ -57,6 +60,7 @@ GEM
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
     erubis (2.7.0)
+    eventmachine (1.0.3)
     eventmachine (1.0.3-x86-mingw32)
     execjs (2.0.1)
     hike (1.2.3)
@@ -144,6 +148,7 @@ DEPENDENCIES
   carrierwave_backgrounder
   coffee-rails (~> 4.0.0)
   delayed_job
+  delayed_job_active_record
   devise
   jbuilder (~> 1.2)
   jquery-rails

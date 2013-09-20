@@ -11,6 +11,7 @@ gem 'zurb-foundation'
 gem 'rmagick'
 gem 'carrierwave_backgrounder'
 gem "delayed_job"
+gem 'delayed_job_active_record'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
